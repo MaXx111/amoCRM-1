@@ -43,7 +43,7 @@ function formatTime(seconds) {
 
 
 inputEl.addEventListener('input', () => {
-    const regex = new RegExp(/[0-9]+$/);
+    const regex = new RegExp(/^\d+$/);
 
     if(!regex.test(inputEl.value) && inputEl.value.length > 0) {
        wrapper.insertAdjacentElement('beforeend', message);
